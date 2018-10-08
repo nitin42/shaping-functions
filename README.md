@@ -14,4 +14,4 @@ I'll keep updating the collection (of shaping functions) as I write my own funct
 
 I am learning about shaders and glsl from [thebookofshaders](https://thebookofshaders.com/).
 
-Many many thanks to [Patricio Gonzalez Vivo](http://patriciogonzalezvivo.com) and [Jen Lowe](http://jenlowe.net) for **The Book of Shaders**, which is such an amazing resource to learn glsl and algorithmic drawing!
+Many many thanks to [Patricio Gonzalez Vivo](http://patriciogonzalezvivo.com) and [Jen Lowe](http://jenlowe.net) for **The Book of Shaders** which is such an amazing resource to learn glsl and algorithmic drawing, and made this project possible.
