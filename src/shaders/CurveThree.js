@@ -25,4 +25,4 @@ void main() {
 }
 `
 
-export default ShaderCanvas(createCanvas('curvethree', shader), 'Curve Three');
+export default ShaderCanvas(createCanvas('curvethree', shader), 'Kynd Curve Three');
