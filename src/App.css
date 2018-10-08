@@ -1,5 +1,11 @@
 html {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Signika', sans-serif;
+  color: #2f2f2f;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.8em;
 }
 
 canvas {
@@ -26,6 +32,20 @@ canvas {
   justify-content: center;
 }
 
+.link {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+  border-bottom: 2px solid #2f2f2f;
+}
+
+.footer {
+  margin-top: 5px;
+}
+
 @media only screen and (max-width: 480px) {
   canvas {
     width: 250px;
@@ -40,10 +60,15 @@ canvas {
   }
 
   .heading {
-    font-size: 2em;
+    font-size: 1.5em;
+    word-spacing: 5px;
   }
 
   h1 {
     font-size: 1.5em;
+  }
+
+  .link {
+    font-size: 14px;
   }
 }

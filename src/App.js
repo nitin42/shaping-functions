@@ -20,22 +20,36 @@ class App extends Component {
     return (
       <div>
         <div className='content-center'>
-          <h1 className='heading'>Shaping Functions</h1>        
+          <h1 className='heading'>Shaping Functions</h1>
+        </div>
+        <div className='content-center' style={{ marginTop: -20, marginBottom: 20 }}>
+          <p className="link"><a className="introduction" href="https://github.com/nitin42/shaping-functions#introduction" target="_blank">Preamble{' '}</a></p>
         </div>
         <div className='canvas-grid'>
-          <Parabola/>
-          <PowerCurve  />
-          <Impulse  />
-          <ExpoStep  />
-          <Gain  />
-          <CubicPulse  />
-          <SineCurve  />
+          <Parabola />
+          <PowerCurve />
+          <Impulse />
+          <ExpoStep />
+          <Gain />
+          <CubicPulse />
+          <SineCurve />
           <CurveOne />
           <CurveTwo />
           <CurveThree />
           <CurveFour />
           <CurveFive />
         </div>
+        <footer className='footer content-center'>
+          <p className="link">
+            Made with ❤️ by{' '}
+            <a
+              href="https://nitin-tulswani.surge.sh/"
+              target="_blank"
+            >
+              Nitin Tulswani
+            </a>
+          </p>
+        </footer>
       </div>
     );
   }
