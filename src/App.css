@@ -8,3 +8,42 @@ canvas {
   -moz-box-shadow: 3px 6px 9px 0 #c7c5c7;
   border-radius: 5px;
 }
+
+.canvas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 10px;
+}
+
+.heading {
+  font-size: 4em;
+  font-family: 'Monoton', cursive;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  canvas {
+    width: 250px;
+    height: 250px;
+  }
+
+  .canvas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 5px;  
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}

@@ -1,6 +1,4 @@
-import React from 'react'
-
-import { createCanvas } from './hoc'
+import { createCanvas, ShaderCanvas } from './hoc'
 
 const shader = ({timeSync = false}) => `
 #ifdef GL_ES
@@ -29,4 +27,4 @@ void main() {
 }
 `
 
-export default createCanvas('sinecurve', shader)
+export default ShaderCanvas(createCanvas('sinecurve', shader), 'Sine Curve')

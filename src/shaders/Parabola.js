@@ -1,5 +1,4 @@
-import React from 'react'
-import { createCanvas } from './hoc';
+import { createCanvas, ShaderCanvas } from './hoc';
 
 const shader = ({timeSync = false}) => `
 #ifdef GL_ES
@@ -26,4 +25,4 @@ void main() {
 }
 `
 
-export default createCanvas('parabola', shader)
+export default ShaderCanvas(createCanvas('parabola', shader), 'Parabola')

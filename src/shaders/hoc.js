@@ -19,3 +19,16 @@ export const createCanvas = (type, shader) => {
 
   return Canvas
 }
+
+export const ShaderCanvas = (Shader, heading) => class extends React.Component {
+  render() {
+    return (
+      <div>
+        <Shader />
+        <div className='content-center' style={{ marginTop: -15 }}>
+          <h1>{heading}</h1>
+        </div>
+      </div>
+    )
+  }
+}
