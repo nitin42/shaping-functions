@@ -32,7 +32,7 @@ class App extends Component {
           <h1 className='heading'>Shaping Functions</h1>
         </div>
         <div className='content-center' style={{ marginTop: -20, marginBottom: 20 }}>
-          <p className="link"><a className="introduction" href="https://github.com/nitin42/shaping-functions#introduction" target="_blank">Preamble{' '}</a></p>
+          <p className="link"><a className="introduction" rel="noopener noreferrer" href="https://github.com/nitin42/shaping-functions#introduction" target="_blank">Preamble{' '}</a></p>
         </div>
         <div className="content-center" style={{ marginTop: -20, marginBottom: 20 }}>
           <span className="small-heading" style={{ padding: 5 }}>Playback Time - {' '}</span>
@@ -60,10 +60,11 @@ class App extends Component {
         </div>
         <footer className='footer content-center'>
           <p className="link">
-            Made with ❤️ by{' '}
+            Made with <span role="img" aria-label="heart">❤️</span> by{' '}
             <a
               href="https://nitin-tulswani.surge.sh/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Nitin Tulswani
             </a>
