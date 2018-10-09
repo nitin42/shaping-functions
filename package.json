@@ -1,5 +1,5 @@
 {
-  "name": "glsl-samples",
+  "name": "shaping-functions",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,8 +12,7 @@
   },
   "scripts": {
     "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
