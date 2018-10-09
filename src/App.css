@@ -1,5 +1,15 @@
+@font-face {
+  font-family: Monoton;
+  src: url(./font-face/monoton/Monoton-Regular.ttf)
+}
+
+@font-face {
+  font-family: Signika;
+  src: url(./font-face/signika/Signika-Regular.otf);
+}
+
 html {
-  font-family: 'Signika', sans-serif;
+  font-family: Signika, sans-serif;
   color: #2f2f2f;
 }
 
@@ -24,7 +34,7 @@ canvas {
 
 .heading {
   font-size: 4em;
-  font-family: 'Monoton', cursive;
+  font-family: Monoton;
 }
 
 .content-center {
@@ -44,6 +54,85 @@ a {
 
 .footer {
   margin-top: 5px;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	display: none;
+}
+
+.toggle {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #dedede;
+	-webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.toggle:before {
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked + .toggle {
+	background-color: #424242;
+}
+
+input:focus + .toggle {
+	box-shadow: 0 0 1px #4f4f4f;
+}
+
+input:checked + .toggle:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.toggle:after {
+	content: 'OFF';
+	color: white;
+	display: block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 72%;
+	font-size: 12px;
+}
+
+input:checked + .toggle:after {
+	content: 'ON';
+	display: block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 25%;
+	font-size: 12px;
+}
+
+input:checked + .toggle .on {
+	display: block;
+}
+
+input:checked + .toggle .off {
+	display: none;
 }
 
 @media only screen and (max-width: 480px) {

@@ -1,12 +1,18 @@
 import React from 'react'
 import glslCanvas from 'glslCanvas'
 
+import { Consumer } from '../context'
+
 export const createCanvas = (type, shader) => {
   class Canvas extends React.Component {
     componentDidMount() {
       const canvas = document.getElementById(type)
       this.sandbox = new glslCanvas(canvas)
 
+      this.sandbox.load(shader(this.props))
+    }
+
+    componentDidUpdate() {
       this.sandbox.load(shader(this.props))
     }
 
@@ -23,12 +29,16 @@ export const createCanvas = (type, shader) => {
 export const ShaderCanvas = (Shader, heading) => class extends React.Component {
   render() {
     return (
-      <div>
-        <Shader />
-        <div className='content-center' style={{ marginTop: -15 }}>
-          <h1>{heading}</h1>
-        </div>
-      </div>
+      <Consumer>
+        {timesync => (
+          <div>
+            <Shader timeSync={timesync} />
+            <div className='content-center' style={{ marginTop: -15 }}>
+              <h1>{heading}</h1>
+            </div>
+          </div>
+        )}
+      </Consumer>
     )
   }
 }
