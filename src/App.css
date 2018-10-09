@@ -37,6 +37,10 @@ canvas {
   font-family: Monoton;
 }
 
+.small-heading {
+  font-size: 1.2em;
+}
+
 .content-center {
   display: flex;
   justify-content: center;
@@ -148,6 +152,25 @@ input:checked + .toggle .off {
     grid-gap: 5px;  
   }
 
+  .switch {
+    width: 50px;
+    height: 25px;  
+  }
+
+  .toggle:before {
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    border-radius: 25px;
+  }
+
+  /* .toggle:after {
+    top: 50%;
+    left: 42%;
+    font-size: 10px;
+  } */
+  
   .heading {
     font-size: 1.5em;
     word-spacing: 5px;
@@ -159,5 +182,9 @@ input:checked + .toggle .off {
 
   .link {
     font-size: 14px;
+  }
+
+  .small-heading {
+    font-size: 12px;
   }
 }

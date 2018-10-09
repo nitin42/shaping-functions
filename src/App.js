@@ -35,7 +35,7 @@ class App extends Component {
           <p className="link"><a className="introduction" href="https://github.com/nitin42/shaping-functions#introduction" target="_blank">Preamble{' '}</a></p>
         </div>
         <div className="content-center" style={{ marginTop: -20, marginBottom: 20 }}>
-          <span style={{ padding: 5, fontSize: '1.2em' }}>Playback Time - {' '}</span>
+          <span className="small-heading" style={{ padding: 5 }}>Playback Time - {' '}</span>
           <label className="switch" data-tip="Animate using shader playback time" >
             <input type="checkbox" value={this.state.timeSync} onChange={this.handleTimeSync} />
             <span className="toggle"></span>
