@@ -35,7 +35,7 @@ class App extends Component {
           <p className="link"><a className="introduction" href="https://github.com/nitin42/shaping-functions#introduction" target="_blank">Preamble{' '}</a></p>
         </div>
         <div className="content-center" style={{ marginTop: -20, marginBottom: 20 }}>
-          <span style={{ padding: 5, fontSize: '1.2em'}}>Timesync - {' '}</span>
+          <span style={{ padding: 5, fontSize: '1.2em' }}>Playback Time - {' '}</span>
           <label className="switch" data-tip="Animate using shader playback time" >
             <input type="checkbox" value={this.state.timeSync} onChange={this.handleTimeSync} />
             <span className="toggle"></span>
@@ -43,20 +43,20 @@ class App extends Component {
           <ReactTooltip place="right" />
         </div>
         <div className='canvas-grid'>
-        <Provider value={this.state.timesync}>
-          <Parabola />
-          <PowerCurve />
-          <Impulse />
-          <ExpoStep />
-          <Gain />
-          <CubicPulse />
-          <SineCurve />
-          <CurveOne />
-          <CurveTwo />
-          <CurveThree />
-          <CurveFour />
-          <CurveFive />
-        </Provider>
+          <Provider value={this.state.timesync}>
+            <Parabola />
+            <PowerCurve />
+            <Impulse />
+            <ExpoStep />
+            <Gain />
+            <CubicPulse />
+            <SineCurve />
+            <CurveOne />
+            <CurveTwo />
+            <CurveThree />
+            <CurveFour />
+            <CurveFive />
+          </Provider>
         </div>
         <footer className='footer content-center'>
           <p className="link">
