@@ -1,4 +1,5 @@
-import { createCanvas, ShaderCanvas } from './hoc'
+import { createShaderCanvas } from 'react-shader-canvas'
+import { ShaderCanvas } from './hoc'
 
 const shader = ({ timeSync = false }) => `
 #ifdef GL_ES
@@ -25,4 +26,4 @@ void main() {
 }
 `
 
-export default ShaderCanvas(createCanvas('curvefive', shader), 'Kynd Curve Five');
+export default ShaderCanvas(createShaderCanvas(shader), 'Kynd Curve Five');

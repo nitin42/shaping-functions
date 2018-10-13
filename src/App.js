@@ -44,18 +44,18 @@ class App extends Component {
         </div>
         <div className='canvas-grid'>
           <Provider value={this.state.timesync}>
-            <Parabola />
-            <PowerCurve />
-            <Impulse />
-            <ExpoStep />
-            <Gain />
-            <CubicPulse />
-            <SineCurve />
-            <CurveOne />
-            <CurveTwo />
-            <CurveThree />
-            <CurveFour />
-            <CurveFive />
+            <Parabola id="parabola" />
+            <PowerCurve id="power-curve" />
+            <Impulse id="impulse-curve" />
+            <ExpoStep id="expo-step" />
+            <Gain id="gain-curve" />
+            <CubicPulse id="cubic-pulse" />
+            <SineCurve id="sine-curve" />
+            <CurveOne id="kynd-curve-one" />
+            <CurveTwo id="kynd-curve-two" />
+            <CurveThree id="kynd-curve-three" />
+            <CurveFour id="kynd-curve-four" />
+            <CurveFive id="kynd-curve-five" />
           </Provider>
         </div>
         <footer className='footer content-center'>

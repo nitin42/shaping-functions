@@ -1,4 +1,5 @@
-import { createCanvas, ShaderCanvas } from './hoc';
+import { createShaderCanvas } from 'react-shader-canvas'
+import { ShaderCanvas } from './hoc';
 
 const shader = ({timeSync = false}) => `
 #ifdef GL_ES
@@ -25,4 +26,4 @@ void main() {
   gl_FragColor = vec4(color, 1.0);
 }
 `
-export default ShaderCanvas(createCanvas('powercurve', shader), 'Power Curve')
+export default ShaderCanvas(createShaderCanvas(shader), 'Power Curve')
